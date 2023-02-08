@@ -1,0 +1,175 @@
+﻿<!Doctype html>
+<html>
+<head>
+<center>
+<body bgcolor="white">
+<form name="Home" method="post">
+<title>Blood Bank System</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<div class="topnav">
+ <a class="active " href="index.html">Home</a>
+ <a class="active " href="reg.php">Donar Register</a>
+ <a class="active " href="reg1.php">Bloodbank Register</a>
+ <a class="active " href="search1.php">Search</a>
+ <div style="float:right;">
+<a class="active " href="about.php" target="bottom">About</a>
+<a class="active " href="mailto:someone@example.com">Mail to</a>
+<a class="active " href="Reviews & Rating.php" target="bottom">Rate us</a>
+</div>
+</div>
+<body style="background-color:#1f2022">
+<br>
+    <div align="center"><image style="width: 300px; height: 300px;" src=blood-bank.jpg></div>
+    <h1><br>
+    <font color="white">  
+    WELCOME TO BLOOD BANK AND DONAR SITE
+</font>  
+</form>
+</center>
+<footer class="footer" onclick="on()">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h3><i class="fa fa-road"></i>ACME CO INC.</h3>
+                <div class="row" >
+                    <div class="col-6">
+                       <table align="center" width="90%">
+                        <tr>
+                            <td>
+                                <ul class="list-unstyled">
+                                    <li><a href="" onclick="on()">Product</a></li>
+                                    <li><a href="" onclick="on()">Benefits</a></li>
+                                    <li><a href="" onclick="on()">Partners</a></li>
+                                    <li><a href="" onclick="on()">Team</a></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <div class="col-6">
+                        
+                                    <ul class="list-unstyled">
+                                        <li><a href="">Documentation</a></li>
+                                        <li><a href="">Support</a></li>
+                                        <li><a href="">Legal Terms</a></li>
+                                        <li><a href="">About</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <ul class="list-unstyled">
+                                    <li><a href="" >Learn more</a></li>
+                                    <li><a href="">policy</a></li>
+                                    <li><a href="" >Terms & conditions</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                       </table>
+                    </div>    
+                </div>
+                <br>
+            </div>
+            <div class="col-md-2">
+                <h5 class="text-md-right">Contact Us</h5>
+                <hr>
+            </div>
+            <div class="col-md-5">
+                <form>
+                    <fieldset class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                    </fieldset>
+                    <fieldset class="form-group text-xs-right">
+                        <button type="button" class="btn btn-secondary-outline btn-lg">Send</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="overlay" onclick="off()">
+  </div>
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+</body>
+</head>
+<style>
+          @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+footer {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+p {
+    font-family: 'Times New Roman';
+    align=left;
+
+}
+img { 
+    margin-top: 50px; 
+  }
+
+/* Sticky footer position and size
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 300px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 300px;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 567em) {
+    body {
+      margin-bottom: 700px;
+    }
+    .footer {
+      height: 430px;
+    }
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+  padding-top: 30px;
+  background-color: #292c2f;
+  color: white;
+}
+
+footer a {
+  color:white;
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: white;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: white;
+    padding: 0.7em 1em;
+}
+</style>
+</html>
